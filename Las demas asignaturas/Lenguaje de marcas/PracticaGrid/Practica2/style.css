@@ -1,0 +1,56 @@
+main {
+    display: grid;
+    background-color: gainsboro;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 50px 1fr 100px 200px;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "navegador navegador navegador"
+        "seccion seccion seccion"
+        "lateral lateral lateral"
+        "pie pie pie";
+}
+
+header {
+    grid-area: cabecera;
+    background-color: blueviolet;
+}
+
+nav {
+    grid-area: navegador;
+    background-color: cornflowerblue;
+}
+
+section {
+    grid-area: seccion;
+    background-color: indigo;
+}
+
+aside {
+    grid-area: lateral;
+    background-color: darkmagenta;
+}
+
+footer {
+    grid-area: pie;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+        display: grid;
+        background-color: gainsboro;
+        max-width: 1000px;
+        min-height: 100vh;
+        margin: 0 auto;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 150px 100px 1fr 100px;
+        grid-template-areas:
+            "cabecera cabecera cabecera"
+            "navegador navegador navegador"
+            "lateral seccion seccion "
+            "pie pie pie";
+    }
+}
