@@ -45,12 +45,23 @@ footer {
         max-width: 1000px;
         min-height: 100vh;
         margin: 0 auto;
-        grid-template-columns: 200px 1fr 200px;
-        grid-template-rows: 150px 100px 1fr 100px;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 150px 100px 500px 100px;
         grid-template-areas:
             "cabecera cabecera cabecera"
             "navegador navegador navegador"
             "lateral seccion seccion "
             "pie pie pie";
+    }
+}
+@media(min-width:1001px) {
+    main {
+        background-color: gainsboro;
+        margin: 0 auto;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 150px 600px;
+        grid-template-areas: 
+                            "cabecera cabecera cabecera"
+                            "navegador navegador ";
     }
 }
