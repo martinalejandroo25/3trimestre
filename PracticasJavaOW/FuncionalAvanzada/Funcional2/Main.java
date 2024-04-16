@@ -1,2 +1,4 @@
-package Funcional2;public class Main {
+package Funcional2;
+
+public class Main {
 }
