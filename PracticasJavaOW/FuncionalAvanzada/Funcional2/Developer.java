@@ -1,14 +1,12 @@
-package Funcional2;
-
 import java.util.List;
 import java.util.Objects;
 
 public class Developer {
     private String name;
     private Integer age;
-    private List<Task> tasks;
+    private List<Funcional2.Task> tasks;
 
-    public Developer(String name, Integer age, List<Task> tasks) {
+    public Developer(String name, Integer age, List<Funcional2.Task> tasks) {
         this.name = name;
         this.age = age;
         this.tasks = tasks;
