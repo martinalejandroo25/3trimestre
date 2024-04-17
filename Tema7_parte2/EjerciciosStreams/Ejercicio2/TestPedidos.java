@@ -30,8 +30,7 @@ public class TestPedidos {
         ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
         //2.
         pedidos.stream()
-                .filter( pedido -> pedido.getProductos().stream())
-                .anyMatch(producto -> producto.getCategoria())
-                .equals(Producto.Categoria)
+                .filter( pedido -> pedido.getProductos().stream().isParallel())
+                .equals(Producto.getCategoria());
     }
 }

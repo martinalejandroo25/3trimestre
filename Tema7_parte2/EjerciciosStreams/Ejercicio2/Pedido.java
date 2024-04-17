@@ -19,6 +19,14 @@ public class Pedido {
         this.cliente = cliente;
     }
 
+    public Set<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(Set<Producto> productos) {
+        this.productos = productos;
+    }
+
     public Long getId() {
         return id;
     }
@@ -67,7 +75,7 @@ public class Pedido {
         sb.append(", fechaEnvio=").append(fechaEnvio);
         sb.append(", estado='").append(estado).append('\'');
         sb.append(", cliente=").append(cliente);
-        sb.append(", productoS=").append(productoS);
+        sb.append(", productoS=").append(productos);
         sb.append('}');
         return sb.toString();
     }

@@ -1,3 +1,5 @@
+package Practica1;
+
 public class JugadorBasket {
     private String jugador;
     private Double altura;
