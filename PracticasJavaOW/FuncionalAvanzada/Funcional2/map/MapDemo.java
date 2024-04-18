@@ -2,8 +2,10 @@ package PracticasJavaOW.FuncionalAvanzada.Funcional2.map;
 
 import PracticasJavaOW.FuncionalAvanzada.Funcional2.*;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
+import Funcional2.Task;
 
 public class MapDemo {
     public static void main(String[] args) {
@@ -13,14 +15,31 @@ public class MapDemo {
         names.stream()
                 .map(String::toUpperCase) // Extrae y transforma a mayúsculas
                 .distinct() // Elimina duplicados
-                .sorted(Comparator.comparing(String::length)) // ordena por longitud
+                .sorted(Comparator.comparing(String::length)) // ordena por longitud, también se puede poner en lambda como name -> name.lenght()
                 .forEach(System.out::println); //Imprime
+
 
         List<Developer> developers = getDevelopers();
         developers.stream()
                 .flatMap(dev -> dev.getTasks().stream())
+                //flatMap sirve para aplanar esas estructuras de datos que nos encontramos dentro de la estructura de datos principal o el Stream principal
                 .filter(task -> task.getHours() > 5)
                 .forEach(System.out::println);
+
+        List<Integer> list1 = List.of(1,2,3);
+        List<Integer> list2 = List.of(4,5,6);
+        List<Integer> list3 = List.of(7,8,9);
+        List<List<Integer>> listOfList = List.of(list1,list2,list3);
+        List<Integer> results = listOfList.stream()
+                .flatMap(Collection::stream)
+                .peek(System.out::println)
+                .filter(num -> num > 5)
+                .peek(System.out::println)
+                //peek serviría para ver las operaciones intermedias
+                .map(num -> num*2)
+                .toList();
+
+        System.out.println("resultado"+results);
     }
         private static List<Developer> getDevelopers(){
             Task task1 = new Task(1L, "task1", 5);

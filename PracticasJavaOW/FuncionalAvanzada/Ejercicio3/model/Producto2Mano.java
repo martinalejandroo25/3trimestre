@@ -5,12 +5,12 @@ import java.util.Objects;
 public class Producto2Mano {
 
     private String id, nombre, descripcion;
-    public enum categoría {INMUEBLES, TELEFONÍA, INFORMÁTICA, COCHES, BICICLETAS, MUEBLES, ANTIGUEDADES, ROPA}
+    public enum categoria {INMUEBLES, TELEFONÍA, INFORMÁTICA, COCHES, BICICLETAS, MUEBLES, ANTIGUEDADES, ROPA}
     public enum estado {PERFECTO, BUENO, POCO_USO, MUY_USADO, DEFECTUOSO, MALO}
-    private boolean envio;
+    private boolean envio ;
     private double precio;
 
-    public Producto2Mano(String id, String nombre, String descripcion, boolean envio, double precio) {
+    public Producto2Mano(String id, String nombre, String descripcion,categoria categoria, estado estado, boolean envio, double precio) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;

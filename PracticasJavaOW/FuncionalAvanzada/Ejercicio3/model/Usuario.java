@@ -1,5 +1,6 @@
 package PracticasJavaOW.FuncionalAvanzada.Ejercicio3.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Usuario {
@@ -7,12 +8,12 @@ public class Usuario {
     private String nombre;
     private String apellidos;
     private String genero;
-    private Date fecha_nacimiento;
+    private LocalDate fecha_nacimiento;
     private String dni;
     private String login;
     private String password;
 
-    public Usuario(String nombre, String apellidos, String genero, Date fecha_nacimiento, String dni, String login, String password) {
+    public Usuario(String nombre, String apellidos, String genero, LocalDate fecha_nacimiento, String dni, String login, String password) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.genero = genero;
@@ -46,11 +47,11 @@ public class Usuario {
         this.genero = genero;
     }
 
-    public Date getFecha_nacimiento() {
+    public LocalDate getFecha_nacimiento() {
         return fecha_nacimiento;
     }
 
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
+    public void setFecha_nacimiento(LocalDate fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
 
