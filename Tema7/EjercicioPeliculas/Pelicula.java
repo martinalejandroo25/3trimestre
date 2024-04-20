@@ -1,7 +1,6 @@
-package Tema7_parte2.EjercicioPeliculas;
+package Tema7.EjercicioPeliculas;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Pelicula {
     private String id;

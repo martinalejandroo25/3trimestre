@@ -1,6 +1,4 @@
-package Tema7_parte2.EjercicioPeliculas;
-
-import java.util.Objects;
+package Tema7.EjercicioPeliculas;
 
 public class Genero {
     private static long contador=0;

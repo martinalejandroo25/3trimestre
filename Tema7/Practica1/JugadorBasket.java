@@ -1,4 +1,4 @@
-package Practica1;
+package Tema7.Practica1;
 
 public class JugadorBasket {
     private String jugador;
