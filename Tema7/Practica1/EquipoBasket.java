@@ -13,10 +13,10 @@ public class EquipoBasket {
 * Implementa los siguientes métodos:
  [x]buscarJugador(String nombre): que busque el jugador en el equipo y lo devuelva.
 * Intenta hacerlo óptimo buscando con binarySearch.
- []buscarJugador(int dorsal): más fácil pues me devuelve el Jugador con ese dorsal directamente.
- []mostrarEquipo(): que liste todo el equipo de baloncesto.
- []addJugador(Jugador): que añada un Jugador al Equipo.
- []removeJugador(Jugador): que elimine ese Jugador del Equipo.*/
+ [x]buscarJugador(int dorsal): más fácil pues me devuelve el Jugador con ese dorsal directamente.
+ [x]mostrarEquipo(): que liste todo el equipo de baloncesto.
+ [x]addJugador(Jugador): que añada un Jugador al Equipo.
+ [x]removeJugador(Jugador): que elimine ese Jugador del Equipo.*/
 private String nombre;
 private Double partidosGanados;
 private Double partidosPerdidos;
@@ -81,20 +81,18 @@ private HashSet<JugadorBasket> jugadores;
     //TO STRING
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("EquipoBasket{");
-        sb.append("nombre='").append(nombre).append('\'');
-        sb.append(", partidosGanados=").append(partidosGanados);
-        sb.append(", partidosPerdidos=").append(partidosPerdidos);
-        sb.append(", jugadores=").append(jugadores);
-        sb.append('}');
-        return sb.toString();
+        return "EquipoBasket{" + "nombre='" + nombre + '\'' +
+                ", partidosGanados=" + partidosGanados +
+                ", partidosPerdidos=" + partidosPerdidos +
+                ", jugadores=" + jugadores +
+                '}';
     }
     //OTROS METODOS
 //    buscarJugador(String nombre): que busque el jugador en el equipo y lo devuelva.
 //            * Intenta hacerlo óptimo buscando con binarySearch.
     public JugadorBasket buscarJugador(String nombre){
      for(JugadorBasket jugador:jugadores){
-         if(jugador.getJugador() == nombre){
+         if(Objects.equals(jugador.getJugador(), nombre)){
              return jugador;
          }
      }
@@ -108,5 +106,23 @@ private HashSet<JugadorBasket> jugadores;
             }
         }
         return null;
+    }
+    public HashSet<JugadorBasket> mostrarEquipo(){
+        return jugadores;
+    }
+    public void addJugador(JugadorBasket jugador) {
+        if (jugadores.contains(jugador)){
+            System.out.println("El jugador ya está en añadido");
+        } else {
+            jugadores.add(jugador);
+        }
+    }
+    public void removeJugador(JugadorBasket jugador) {
+        if (jugadores.contains(jugador)){
+            System.out.println("Eliminando...");
+            jugadores.remove(jugador);
+        } else {
+            System.out.println("El jugador al cual quiere eliminar no existe");
+        }
     }
 }
