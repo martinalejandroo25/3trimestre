@@ -1,5 +1,6 @@
 package Tema7.Practica1;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.TreeMap;
 
@@ -17,7 +18,27 @@ public class NBALeague {
         return equipos.get(nombre);
     }
     public void delEquipo(String nombre) {
-        if (equipos.)equipos.remove(nombre);
-
+        if (equipos.containsValue(nombre)){
+            equipos.remove(nombre);
+        } else {
+            System.out.println("Nombre "+nombre+" no encontrado");
+        }
     }
+    public void MostrarEquiposDes(){
+        equipos.toString();
+    }
+    public void MostrarEquiposOrdenado(){
+        equipoOrden.toString();
+    }
+    public JugadorBasket JugadorMasAlto(){
+        return this.equipos
+                .values()
+                .stream()
+                .flatMap( equipo -> equipo.getJugadores().stream()) //stream<Equipo>
+                .max(Comparator.comparing(JugadorBasket::getAltura))
+                .get();
+    }
+
+
+
 }
