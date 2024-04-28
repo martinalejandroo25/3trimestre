@@ -111,9 +111,15 @@ inner join trabaja t on t.cdemp = e.cdemp
 group by NombreEmpleado
 order by NombreEmpleado asc;
 -- 6. Lista de empleados que trabajan en Málaga o en Almería.
-select e.* from empleados e
+select e.* from empleado e
 inner join departamento d on d.cddep = e.cddep
+where d.ciudad like "malaga" or d.ciudad like "almeria";
 -- 7. Lista alfabética de los nombres de empleado y los nombres de sus jefes. Si el empleado no tiene jefe debe aparecer la cadena “Sin Jefe”.
+select e.nombre, coalesce(e.nombre, "Sin Jefe") 
+from empleado e
+having e.nombre =(select e.nombre from empleado e
+					where cdjefe)
+
 
 -- 8. Fechas de ingreso mínima. y máxima, por cada departamento.
 
