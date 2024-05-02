@@ -131,10 +131,32 @@ insert into vendart values
 
 
 -- 1.- CIUDAD DONDE MAS SE VENDIO
---2.- TIENDA DONDE MAS SE VENDIO
+
+-- 2.- TIENDA DONDE MAS SE VENDIO
+select t.nom_tienda, count(*)
+from tienda t, vendedores v, vendart va
+where t.id_tienda = v.id_tienda
+and v.id_vend = va.id_vend
+group by t.nom_tienda
+having count(*) = (select count(*)
+					from tienda t, vendedores v, vendart va
+					where t.id_tienda = v.id_tienda
+					and v.id_vend = va.id_vend
+                    group by t.id_tienda
+                    order by 1 desc limit 1);
 -- 3.- VENDEDOR QUE MAS VENDIO
+select v.nom_vend, count(*)
+from vendedores v, vendart va
+where v.id_vend = va.id_vend
+group by v.nom_vend
+having count(*)=(select count(*)
+				from vendedores v, vendart va
+				where v.id_vend = va.id_vend
+                group by v.id_vend
+                order by 1 desc limit 1);
 -- 4.-NOMBRE DE CIUDAD, VENDEDOR, ARTICULO, TIENDA TIPO Y PRECIO DE TODO LO VENDIDO
 -- 5.- NOMBRE DEL TIPO DE ARTICULO MAS CARO
+select va.id_tipo
 -- 6.- DATOS DEL VENDEDOR QUE MAS GANA
 -- 7.- MONTANTE DE TODOS LOS ARTICULOS DE TIPO BAZAR
 -- 8.- MONTANTE DE TODO LO QUE SE VENDIO EN ALMERIA

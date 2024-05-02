@@ -45,7 +45,7 @@ having count(*)=(select count(*)
 
 /*4.- NOMBRE DE CIUDAD, VENDEDOR, ARTICULO,
 TIENDA TIPO Y PRECIO DE TODO LO VENDIDO.*/
-select  distinct nom_vend,nom_art,nom_tienda,nom_tipo,precio
+select  distinct nom_ciudad,nom_vend,nom_art,nom_tienda,nom_tipo,precio
 from tipoart,articulos,vendart,vendedores,tienda,ciudad
 where tipoart.id_tipo=articulos.id_tipo
 and articulos.id_art=vendart.id_art
