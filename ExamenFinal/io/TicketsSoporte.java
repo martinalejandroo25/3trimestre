@@ -1,12 +1,18 @@
 package ExamenFinal.io;
 
 import ExamenFinal.Services.ServicioSoporte;
+import ExamenFinal.models.*;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-public class TicketSoporte {
+public class TicketsSoporte {
 //    o static cargarCSV(): que cree un objeto ServicioSoporte. Luego lea el fichero usuarios.csv y añada los
 //    usuarios del fichero leídos al set de usuarios del objeto ServicioSoporte. Que haga lo mismo para los
 //    técnicos. Por último, lea el fichero tickets.csv y los añada a la lista de tickets de ServicioSoporte.
@@ -19,9 +25,40 @@ public class TicketSoporte {
 
     public static ServicioSoporte cargarCSV() throws IOException {
         //definir rutas de los archivos
-        Path usuarios = Paths.get(".", "ExamenFinal", "resources", "usuarios.csv");
-        Path tecnicos = Paths.get(".", "ExamenFinal", "resources", "tecnico.csv");
+        Path usuariosFile = Paths.get(".", "ExamenFinal", "resources", "usuarios.csv");
+        Path tecnicosFile = Paths.get(".", "ExamenFinal", "resources", "tecnico.csv");
+        Path ticketsFile = Paths.get(".", "ExamenFinal", "resources", "tickets.csv");
 
         ServicioSoporte ser = new ServicioSoporte();
+
+        List<Usuario> usuarios = Files.lines(usuariosFile)
+                .map(linea -> {
+                    // Divide cada línea del archivo en partes usando comas como delimitador.
+                    String[] cad = linea.split(",");
+                    return new Usuario(
+                                Long.parseLong(cad[0]), cad[1], cad[2], cad[3], cad[4],
+                                LocalDate.parse(cad[5]));
+                    })
+                .toList();
+        return ser;
+
+        List<Tecnico> tecnicos = Files.lines(tecnicosFile)
+                .map(linea -> {
+                    String[] cad = linea.split(",");
+                    return new Tecnico(
+                            Long.parseLong(cad[0]), cad[1], cad[2], cad[3], cad[4], Especialidad.valueOf(cad[4]), Integer.parseInt(cad[5]));
+                })
+                .collect(Collectors.toSet());
+
+        Set<TicketSoporte> tickets = Files.lines(ticketsFile)
+                .map(linea -> {
+                    String[] cad = linea.split(",");
+                    Usuario usuario = ser.findUsuarioById(Integer.parseInt(cad[6]));
+                    Tecnico tecnico = ser.findTecnicoById(Integer.parseInt(cad[7]));
+                    return new TicketSoporte(
+                            Long.parseLong(cad[0]), LocalDate.parse(cad[1]), LocalDate.parse(cad[2]), Estado.valueOf(cad[3]), Integer.parseInt(cad[4]), cad[5], usuario, tecnico);
+                })
+                .collect(Collectors.toSet());
+
     }
 }
