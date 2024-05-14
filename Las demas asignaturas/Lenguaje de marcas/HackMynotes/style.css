@@ -1,0 +1,164 @@
+/*CONTENEDOR*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+/* BODY */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(imagenes/background.jpg);
+    background-size: cover;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+/* TEXTO*/
+.es1, .es2 {
+    display: inline-block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid transparent;
+    color: white;
+    font-size: 60px;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.es1 {
+    width: 19ch;
+    animation: typing 2s steps(19), blink .5s step-end 2s;
+    opacity: 1;
+}
+.es2 {
+    width: 32ch;
+    animation: typing 2s steps(32) 2s, blink .5s step-end infinite 4s;
+}
+/*color "ciberseguridad"*/
+.es3 {
+    color: chartreuse;
+}
+.es3 a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+.es3 a:visited {
+    color: inherit;
+    text-decoration: none;
+
+}
+.es3:hover {
+    color: aqua;
+}
+@keyframes typing {
+    from { width: 0;}
+}
+@keyframes blink {
+    50%{ border-color: white }
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+h2 span {
+    background-color: rgba(108, 112, 108, 0.7);
+    padding: 3px;
+}
+h1, h2 {
+    margin: 0;
+    padding-left: 20px;
+}
+/* NAV*/
+nav {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid rgba(51, 204, 51);
+    height: 50px;
+}
+.nav-links {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.nav-links a, .contenido-apuntes {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+.apuntes {
+    position: relative;
+    display: inline-block;
+}
+
+.apuntes-contenido {
+    position: absolute;
+    background-color: #474545;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    top: 100%;
+    left: 0;
+}
+
+.apuntes:hover .apuntes-contenido {
+    max-height: 500px;
+}
+.apuntes-contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links a {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
+}
+.nav-links a:hover, .apuntes-contenido a:hover {
+    background-color: #474545;
+}
+
+.nav-links a:hover {
+    color: black;
+    background-color: rgb(87, 238, 67, 0.5);
+    padding: 5px 10px;
+}
+
+.logo img{
+    max-width: 70px;
+    margin-right: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+.logo img:hover {
+    border-color: #137d00;
+    transform: scale(.95);
+}
