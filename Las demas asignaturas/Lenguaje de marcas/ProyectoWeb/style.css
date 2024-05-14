@@ -52,6 +52,19 @@ body::before {
 .es3 {
     color: chartreuse;
 }
+.es3 a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+.es3 a:visited {
+    color: inherit;
+    text-decoration: none;
+
+}
+.es3:hover {
+    color: aqua;
+}
 @keyframes typing {
     from { width: 0;}
 }
@@ -136,4 +149,16 @@ nav {
     color: black;
     background-color: rgb(87, 238, 67, 0.5);
     padding: 5px 10px;
+}
+
+.logo img{
+    max-width: 70px;
+    margin-right: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+.logo img:hover {
+    border-color: #137d00;
+    transform: scale(.95);
 }

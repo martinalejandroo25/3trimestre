@@ -1,0 +1,164 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url(/imagenes/difuminado.webp);
+        background-size: cover;
+        padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 10px; /* Menor padding en pantallas pequeñas */
+        }
+
+    }
+.imagen-container {
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+.imagen-estilo {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.pie-de-foto {
+    text-align: center; /* Centra el texto del pie de foto */
+    color: #666; /* Color del texto para el pie de foto */
+    padding: 8px 16px; /* Padding para espacio alrededor del texto */
+    font-size: 14px; /* Tamaño adecuado para el pie de foto */
+    background-color: #f8f8f8; /* Un fondo ligeramente diferente para destacarlo */
+    border-top: 1px solid #ccc; /* Define visualmente el área del pie de foto */
+}
+/* Estilo base para todos los textos */
+.texto-style {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+    padding: 10px; /* Espacio interior generoso */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px 0; /* Margen superior e inferior para separación */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+    max-width: 90%; /* Controla el ancho máximo del bloque */
+    margin-left: auto; /* Centra el bloque horizontalmente */
+    margin-right: auto;
+    color: #333; /* Color de texto oscuro para contraste con el fondo */
+    font-family: 'Arial', sans-serif; /* Fuente genérica para alta legibilidad */
+}
+
+/* Estilos especializados para el título principal */
+.t-s-tit {
+    background-color: rgb(23, 31, 39);
+    font-size: 36px; /* Tamaño de fuente grande para títulos principales */
+    font-weight: bold; /* Fuente en negrita */
+    color: #c7c6c6; /* Color de texto un poco más oscuro para destacar */
+}
+
+/* Estilos especializados para subtítulos */
+.t-s-sub {
+    background-color: #f0f0f0;
+    font-size: 24px; /* Tamaño de fuente mediano para subtítulos */
+    font-weight: semi-bold; /* Semi-negrita para menos prominencia que el título */
+    color: #000000; /* Color de texto un poco más claro */
+}
+.t-s-terminal {
+    background-color: rgba(85, 83, 83, 0.5); /* Fondo blanco con transparencia */
+    color: rgb(245, 245, 245);
+    font-family: monospace;
+}
+/* NAV*/
+nav {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid rgba(51, 204, 51);
+    height: 50px;
+}
+.nav-links {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.nav-links a, .contenido-apuntes {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+.apuntes {
+    position: relative;
+    display: inline-block;
+}
+
+.apuntes-contenido {
+    position: absolute;
+    background-color: #474545;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    top: 100%;
+    left: 0;
+}
+
+.apuntes:hover .apuntes-contenido {
+    max-height: 500px;
+}
+.apuntes-contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links a {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
+}
+.nav-links a:hover, .apuntes-contenido a:hover {
+    background-color: #474545;
+}
+
+.nav-links a:hover {
+    color: black;
+    background-color: rgb(87, 238, 67, 0.5);
+    padding: 5px 10px;
+}
+
+/*TERMINAL*/
+.terminal {
+    background-color: #1d1f21;  /* Color de fondo oscuro */
+    color: #7cfc00;  /* Color de texto verde claro */
+    border: 1px solid #ccc;  /* Borde gris claro */
+    padding: 10px;
+    font-family: 'Courier New', monospace;  /* Tipografía monoespaciada */
+    border-radius: 5px;  /* Bordes redondeados */
+    max-width: 600px;  /* Ancho máximo */
+    margin: 20px;  /* Margen para separar de otros elementos */
+}
+
+.terminal-header {
+    padding: 5px;
+    color: #fff;  /* Texto blanco para el encabezado */
+    font-weight: bold;  /* Texto en negrita */
+}
+
+.terminal-body {
+    overflow-x: auto;  /* Añade desplazamiento horizontal si es necesario */
+}
+.terminal-footer {
+    color: darkcyan;
+}
+
+pre {
+    margin: 0;  /* Quita el margen por defecto de <pre> */
+    white-space: pre-wrap;  /* Asegura que el texto se ajuste al contenedor */
+}
