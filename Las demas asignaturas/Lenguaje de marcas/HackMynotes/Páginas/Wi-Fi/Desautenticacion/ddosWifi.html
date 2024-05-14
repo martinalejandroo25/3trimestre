@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="ddosWifi.css">
-    <link rel="stylesheet" href="/Páginas/navegador.css">
+    <link rel="stylesheet" href="Redes.css">
 </head>
 
 <body>
     <!-- /*barra superior navegación*/ -->
     <nav>
-        <a href="/index.html" class="logo"><img src="/imagenes/HackMyNotesCorte.jpeg" alt="HackMyNotes"></a>
+        <div class="logo">HackMyNotes</div>
         <div class="nav-links">
-            <a href="#">Inicio</a>
+            <a href="/index.html">Inicio</a>
             <div class="apuntes">
-                <a href="Páginas/apuntes.html">Apuntes</a>
+                <a href="#">Apuntes</a>
                 <div class="apuntes-contenido">
-                    <a href="/Páginas/Wi-Fi/redes.html">Redes Wifi</a>
-                    <a href="/Páginas/Social/Social.html">Ingeniería Social</a>
+                    <a href="Páginas/Redes.html">Redes Wifi</a>
+                    <a href="#Social">Ingeniería Social</a>
                     <a href="#anonimato">Anonimato</a>
                     <a href="#bluetooth">Bluetooth</a>
                     <a href="#linux">Linux</a>
@@ -30,10 +29,10 @@
             <a href="#">Acerca de</a>
         </div>
     </nav>
-    <!--EXPLICACIONES-->
     <h1 class="texto-style t-s-tit" style="text-align: center;">Redes Wifi</h1>
+    <h3 class="texto-style">En este apartado veremos algunas formas de hacking Wifi</h3>
     <hr>
-    <h2 class="texto-style t-s-sub">Ataques DDOS de desconexión de un dispositivo por Wi-Fi</h2>
+    <h2 class="texto-style t-s-sub">Ataques DDOS de desconexión de un dispositivo</h2>
     <!--VISUALIZAR ADAPTADORES DE RED-->
     <div class="terminal">
         <div class="terminal-header">
@@ -101,38 +100,24 @@
                 utilizados por el estándar 802.11g</div>
         </div>
     </div>
-    <div class="imagen-container ">
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ sudo airodump-ng --band a "nombre del adaptador"</pre>
+            <div class="terminal-footer">Para realizar el escaneo de redes 5GHz</div>
+            <pre>$ sudo airodump-ng --band b "nombre del adaptador"</pre>
+            <div class="terminal-footer">Escanea y captura paquetes en la banda de 2.4 GHz, específicamente en los
+                canales utilizados por el estándar 802.11b</div>
+            <pre>$ sudo airodump-ng --band g "nombre del adaptador"</pre>
+            <div class="terminal-footer">Escanea y capturar paquetes en la banda de 2.4 GHz, pero en los canales
+                utilizados por el estándar 802.11g</div>
+        </div>
+    </div>
+    <div class="imagen-container imagen-estilo">
         <img src="/imagenes/airodumpred.png" alt="Auditoria red">
-        <div class="pie-de-foto t-s-terminal">Aqui podemos ver el listado con información importante <br>de cada red de nuestra zona</div>
     </div>
-    <div class="terminal">
-        <div class="terminal-header">
-            <span>Bash</span>
-        </div>
-        <div class="terminal-body">
-            <pre>$ sudo airodump-ng --band < letra de la banda usada> -c 'Canal CH' --bssid < bssid de la red> < nombre_adaptador></pre>
-            <div class="terminal-footer">Aquí estaremos monitorizando únicamente la red "víctima"</div>
-        </div>
-    </div>
-    <div class="imagen-container ">
-        <img src="/imagenes/airodumpred2.png" alt="Auditoria red">
-        <div class="pie-de-foto t-s-terminal">Podemos observar como estamos monitorizando <br>
-        Una única red sin necesidad de estar <br>
-        conectados a ella, pudiendo ver <br>
-        los dispositivos conectados</div>
-    </div>
-    <h3 class="texto-style">De esta información nos interesa el BSSID y el STATION, este último es el número identificatorio de los dispositivos conectados <br>
-    Por último vamos a hacer el ataque final para desautenticar el dispositivo y que no pueda conectarse a la red víctima:</h3>
-    <div class="terminal">
-        <div class="terminal-header">
-            <span>Bash</span>
-        </div>
-        <div class="terminal-body">
-            <pre>$ aireplay-ng -0 0 -a < bssid> -c < station> < nombre_adaptador></pre>
-            <div class="terminal-footer">Este comando iniciará el “ping de la muerte” el cual desconectará de la red al dispositivo que hemos atacado</div>
-        </div>
-    </div>
-    <h3 class="texto-style t-s-final">Con esto concluye este ejercicio práctico en el que hemos realizado un ataque de desconexión a un dispositivo conectado a una red en la que no es necesario poseer la contraseña o estar conectados a ella</h3>
 </body>
 
 </html>
