@@ -1,0 +1,27 @@
+main {
+    display: grid;
+    text-align: center;
+    gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, );
+}
+.celda1 {
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda2 {
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda3 {
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda4 {
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda5 {
+    padding: 20px;
+    background-color: cadetblue;
+}

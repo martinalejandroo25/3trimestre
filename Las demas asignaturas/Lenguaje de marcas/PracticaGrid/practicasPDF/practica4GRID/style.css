@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    text-align: center;
+    gap: 1px;
+    grid-template-areas:    "celda1 celda1 celda1"
+                            "celda2 celda3 celda4"
+                            "celda2 celda5 celda6";
+}
+.celda1 {
+    grid-area: celda1;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda2 {
+    grid-area: celda2;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda3 {
+    grid-area: celda3;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda4 {
+    grid-area: celda4;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda5 {
+    grid-area: celda5;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda6 {
+    grid-area: celda6;
+    padding: 20px;
+    background-color: cadetblue;
+}

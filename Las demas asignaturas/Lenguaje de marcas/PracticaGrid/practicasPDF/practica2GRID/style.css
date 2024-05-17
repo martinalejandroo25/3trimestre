@@ -1,0 +1,44 @@
+main {
+    display: grid;
+    text-align: center;
+    grid-template-areas:    "celda1 celda1 celda1"
+                            "celda2 celda3 celda4"
+                            "celda5 celda6 celda7";
+    gap: 1px;
+}
+
+.celda1 {
+    grid-area: celda1;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.celda2 {
+    grid-area: celda2;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.celda3 {
+    grid-area: celda3;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.celda4 {
+    grid-area: celda4;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.celda5 {
+    grid-area: celda5;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.celda6{
+    grid-area: celda6;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.celda7 {
+    grid-area: celda7;
+    background-color: cadetblue;
+    padding: 20px;
+}

@@ -1,0 +1,39 @@
+main {
+    display: grid;
+    gap: 1px;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,auto);
+}
+.celda1 {
+    background-color: cadetblue;
+    padding: 20px;
+    grid-column: 1 / span 3;
+}
+.celda2 {
+    background-color: cadetblue;
+    padding: 20px;
+    grid-column: 1/span 1;
+    grid-row: 2 / span 2;
+}
+.celda3 {
+    background-color: cadetblue;
+    padding: 20px;
+    grid-column: 2/3;
+}
+.celda4 {
+    background-color: cadetblue;
+    padding: 20px;
+    grid-column: 3/4;
+}
+
+.celda5 {
+    background-color: cadetblue;
+    padding: 20px;
+    grid-column: 2/3;
+}
+.celda6 {
+    background-color: cadetblue;
+    padding: 20px;
+    grid-column: 3/4;
+}

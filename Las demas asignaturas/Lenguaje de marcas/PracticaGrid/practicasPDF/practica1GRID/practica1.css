@@ -1,0 +1,54 @@
+main {
+    display: grid;
+    color: white;
+    grid-template-areas:    "celda1 celda2 celda3"
+                            "celda4 celda5 celda6"
+                            "celda7 celda8 celda9";
+    grid-gap: 1px;
+    text-align: center;
+}
+.celda1 {
+    grid-area: celda1;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda2 {
+    grid-area: celda2;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda3 {
+    grid-area: celda3;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda4 {
+    grid-area: celda4;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda5 {
+    grid-area: celda5;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda6 {
+    grid-area: celda6;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda7 {
+    grid-area: celda7;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda8 {
+    grid-area: celda8;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.celda9 {
+    grid-area: celda9;
+    padding: 20px;
+    background-color: cadetblue;
+}
