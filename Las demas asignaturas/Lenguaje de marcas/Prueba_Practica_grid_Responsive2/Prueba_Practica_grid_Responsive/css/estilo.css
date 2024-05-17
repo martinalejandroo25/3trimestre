@@ -1,0 +1,39 @@
+.navMain{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    background-color: blue;
+    height: auto;
+}
+.navMain img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+.tit {
+    color: blue;
+}
+
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boton img {
+    width: 400px;
+}

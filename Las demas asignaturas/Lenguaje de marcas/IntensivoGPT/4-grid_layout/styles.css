@@ -1,0 +1,28 @@
+/*Cualquier contenedor con display:grid se convierte en un contenedor grid*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr /*tres columnas de igual tamaño*/;
+    grid-template-rows: auto; /*filas automáticas*/
+    gap: 10px; /*espacio entre las celdas de la grid*/
+}
+
+/*PROPIEDADES DEL CONTENEDOR*/
+
+/* Definición de Areas */
+.grid-container {
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+}
+
+/* PROPIEDADES DE LOS ELEMENTOS */
+
+/* Posicionamiento en la grid */
+.grid-item {
+    grid-column: 1 / 3; /*ocupa desde la columna 1 hasta la 3*/
+    grid-row: 1 / 2; /*ocupa desde la fila 1 hasta la 2*/
+
+    grid-area: header; /*usa un área definida en grid-template-areas*/
+}

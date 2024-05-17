@@ -1,0 +1,24 @@
+/* todo contenedor con display flex se convierte en un contenedor flex */
+.container {
+    display: flex;
+
+    flex-direction: row; /*fila(horizontal, por defecto)*/
+    flex-direction: column; /*columna(vertical)*/
+
+    justify-content: flex-start; /*alinea los elementos al inicio del eje principal*/
+    justify-content: center; /*alinea los elementos al centro del eje principal*/
+    justify-content: space-between; /*espacio entre elementos*/
+    justify-content: space-around; /*espacio alrededor de los elementos*/
+
+    align-items: flex-start; /*alinea los elementos al inicio del eje transversal*/
+    align-items: center; /*alinea los elementos al centro del eje transversal*/
+    align-items: stretch; /*estira los elementos para llenar el contenedor*/
+}
+
+.item {
+    flex-grow: 1; /*permite que el elemento crezca para llenar el espacio disponible*/
+    flex-shrink: 1; /*permite que el elemento se contraiga si es necesario*/
+    flex-basis: 100px; /*tamaño inicial del elemento antes de aplica el crecimiento/contracción*/
+
+    align-self: center; /*alinea individualmente un elemento dentro del contenedor*/
+}

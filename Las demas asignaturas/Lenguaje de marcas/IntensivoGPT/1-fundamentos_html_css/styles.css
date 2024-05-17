@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.class-name {
+    color: blue;
+}
+
+#id-name {
+    background-color: yellow;
+}
+
+p {
+    margin: 10px 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* propiedades básicas */
+
+h1 {
+    color: red;
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* modelo de caja, box */
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}

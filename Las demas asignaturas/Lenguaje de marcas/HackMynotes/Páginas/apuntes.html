@@ -4,83 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="apuntes.css">
-    <link rel="stylesheet" href="navegador.css">
+    <link rel="stylesheet" href="apuntes.css"> <!-- Enlace al archivo CSS para los estilos de los apuntes -->
+    <link rel="stylesheet" href="navegador.css"> <!-- Enlace al archivo CSS para los estilos del navegador -->
 </head>
 <body>
-    <!-- /*barra superior navegación*/ -->
+    <!-- Barra superior de navegación -->
     <nav>
-        <a href="/index.html" class="logo"><img src="/imagenes/HackMyNotesCorte.jpeg" alt="HackMyNotes"></a>
-        <div class="nav-links">
-            <a href="#">Inicio</a>
-            <div class="apuntes">
-                <a href="#">Apuntes</a>
-                <div class="apuntes-contenido">
-                    <a href="/Páginas/Wi-Fi/redes.html">Redes Wifi</a>
-                    <a href="/Páginas/Social/Social.html">Ingeniería Social</a>
-                    <a href="#anonimato">Anonimato</a>
-                    <a href="#bluetooth">Bluetooth</a>
-                    <a href="#linux">Linux</a>
-                    <a href="#Otros">Demás utilidades</a>
+        <a href="/index.html" class="logo"><img src="/imagenes/HackMyNotesCorte.jpeg" alt="HackMyNotes"></a> <!-- Enlace al logo -->
+        <div class="nav-links"> <!-- Contenedor de los enlaces de navegación -->
+            <a href="#">Inicio</a> <!-- Enlace a la página de inicio -->
+            <div class="apuntes"> <!-- Contenedor desplegable de los apuntes -->
+                <a href="#">Apuntes</a> <!-- Enlace para desplegar los apuntes -->
+                <div class="apuntes-contenido"> <!-- Contenido de los apuntes -->
+                    <a href="/Páginas/Wi-Fi/redes.html">Redes Wifi</a> <!-- Enlace a la página de redes Wifi -->
+                    <a href="/Páginas/Social/Social.html">Ingeniería Social</a> <!-- Enlace a la página de ingeniería social -->
+                    <a href="#anonimato">Anonimato</a> <!-- Enlace a la página de anonimato -->
+                    <a href="#bluetooth">Bluetooth</a> <!-- Enlace a la página de Bluetooth -->
+                    <a href="#linux">Linux</a> <!-- Enlace a la página de Linux -->
+                    <a href="#Otros">Demás utilidades</a> <!-- Enlace a otras utilidades -->
                 </div>
             </div>
-            <a href="#">Contacto</a>
-            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a> <!-- Enlace a la página de contacto -->
+            <a href="#">Acerca de</a> <!-- Enlace a la página acerca de -->
         </div>
-        <button class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="menu-toggle"> <!-- Botón para mostrar el menú desplegable en dispositivos móviles -->
+            <span></span> <!-- Barra del botón -->
+            <span></span> <!-- Barra del botón -->
+            <span></span> <!-- Barra del botón -->
         </button>
     </nav>
-    <!--FONDO DE PANTALLA-->
-    <video autoplay muted lopp id="background">
-        <source src="/imagenes/Background.mp4" type="video/mp4"> 
-        Tu navegador no soporta video HTML5
+    <!-- Fondo de pantalla -->
+    <video autoplay muted loop id="background"> <!-- Video de fondo de pantalla -->
+        <source src="/imagenes/Background.mp4" type="video/mp4"> <!-- Fuente del video -->
+        Tu navegador no soporta video HTML5 <!-- Mensaje de error en caso de que el navegador no soporte HTML5 -->
     </video>
 
-    <div class="Container">
-        <h1 class="texto-style t-s-tit">Bienvenido a <span class="hmn">HackMyNotes</span></h1>
-        <div class="botones-container">
+    <div class="Container"> <!-- Contenedor principal -->
+        <h1 class="texto-style t-s-tit">Bienvenido a <span class="hmn">HackMyNotes</span></h1> <!-- Título principal -->
+        <div class="botones-container"> <!-- Contenedor de los botones -->
+            <!-- Botón y enlace a la página de Redes Wifi -->
             <a href="/Páginas/Wi-Fi/redes.html">
-            <div class="boton">
-                <img src="/imagenes/Redes.jpg" alt="RedesWifi">
-                <h2>Redes Wifi</h2>
-            </div>
-        </a>
-        
-        <a href="/Páginas/Social/Social.html">
-            <div class="boton" >
-                <img src="/imagenes/social.jpg" alt="Ingeniería Social">
-                <h2>Ingeniería
-                    Social
-                </h2>
-            </div>
-        </a>
-        <a href="/Páginas/anonimato.html">
-            <div class="boton">
-                <img src="/imagenes/anonimato.jpg" alt="Anonimato">
-                <h2>Mantener el Anonimato en Internet</h2>
-            </div>
-        </a>
-        <a href="/Páginas/bluetooth.html">
-            <div class="boton" >
-                <img src="/imagenes/bluetooth.jpg" alt="Bluetooth">
-                <h2>Bluetooth</h2>
-            </div>
-        </a>
-        <a href="/Páginas/linux.html">
-            <div class="boton">
-                <img src="/imagenes/linux.jpg" alt="Linux">
-                <h2>Sistemas Linux</h2>
-            </div>
+                <div class="boton">
+                    <img src="/imagenes/Redes.jpg" alt="RedesWifi"> <!-- Imagen del botón -->
+                    <h2>Redes Wifi</h2> <!-- Texto del botón -->
+                </div>
             </a>
-
+            <!-- Botón y enlace a la página de Ingeniería Social -->
+            <a href="/Páginas/Social/Social.html">
+                <div class="boton">
+                    <img src="/imagenes/social.jpg" alt="Ingeniería Social"> <!-- Imagen del botón -->
+                    <h2>Ingeniería Social</h2> <!-- Texto del botón -->
+                </div>
+            </a>
+            <!-- Botón y enlace a la página de Mantener el Anonimato en Internet -->
+            <a href="/Páginas/anonimato.html">
+                <div class="boton">
+                    <img src="/imagenes/anonimato.jpg" alt="Anonimato"> <!-- Imagen del botón -->
+                    <h2>Mantener el Anonimato en Internet</h2> <!-- Texto del botón -->
+                </div>
+            </a>
+            <!-- Botón y enlace a la página de Bluetooth -->
+            <a href="/Páginas/bluetooth.html">
+                <div class="boton">
+                    <img src="/imagenes/bluetooth.jpg" alt="Bluetooth"> <!-- Imagen del botón -->
+                    <h2>Bluetooth</h2> <!-- Texto del botón -->
+                </div>
+            </a>
+            <!-- Botón y enlace a la página de Sistemas Linux -->
+            <a href="/Páginas/linux.html">
+                <div class="boton">
+                    <img src="/imagenes/linux.jpg" alt="Linux"> <!-- Imagen del botón -->
+                    <h2>Sistemas Linux</h2> <!-- Texto del botón -->
+                </div>
+            </a>
+            <!-- Botón y enlace a la página de Demás Utilidades -->
             <a href="/Páginas/utiles.html">
-            <div class="boton">
-                <img src="/imagenes/utiles.png" alt="utiles" width="450px">
-                <h2>Demás Utilidades</h2>
-            </div>
+                <div class="boton">
+                    <img src="/imagenes/utiles.png" alt="utiles" width="450px"> <!-- Imagen del botón -->
+                    <h2>Demás Utilidades</h2> <!-- Texto del botón -->
+                </div>
             </a>
         </div>
     </div>
