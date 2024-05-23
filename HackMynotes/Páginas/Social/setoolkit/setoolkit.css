@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(/imagenes/difuminado.webp);
+    background-size: cover;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Menor padding en pantallas pequeñas */
+    }
+
+}
+.desc{
+    color: #7cfc00;
+}
+.imagen-container {
+max-width: max-content;
+margin: 20px auto;
+box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+border-radius: 8px;
+overflow: hidden;
+}
+.imagen-estilo {
+width: 100%;
+display: block;
+border-bottom: 1px solid #ccc;
+}
+.pie-de-foto {
+text-align: center; /* Centra el texto del pie de foto */
+color: #666; /* Color del texto para el pie de foto */
+padding: 2px 4px; /* Padding para espacio alrededor del texto */
+font-size: 14px; /* Tamaño adecuado para el pie de foto */
+background-color:#f8f8f8; /* Un fondo ligeramente diferente para destacarlo */
+border-top: 1px solid #ccc; /* Define visualmente el área del pie de foto */
+}
+/* Estilo base para todos los textos */
+.texto-style {
+background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+padding: 10px; /* Espacio interior generoso */
+border-radius: 10px; /* Bordes redondeados */
+margin: 10px auto; /* Margen superior e inferior para separación */
+box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+max-width: 90%; /* Controla el ancho máximo del bloque */
+margin-left: auto; /* Centra el bloque horizontalmente */
+margin-right: auto;
+color: #333; /* Color de texto oscuro para contraste con el fondo */
+font-family: 'Arial', sans-serif; /* Fuente genérica para alta legibilidad */
+}
+
+/* Estilos especializados para el título principal */
+.t-s-tit {
+background-color: rgb(23, 31, 39);
+font-size: 36px; /* Tamaño de fuente grande para títulos principales */
+font-weight: bold; /* Fuente en negrita */
+color: #c7c6c6; /* Color de texto un poco más oscuro para destacar */
+}
+
+/* Estilos especializados para subtítulos */
+.t-s-sub {
+background-color: #f0f0f0;
+font-size: 24px; /* Tamaño de fuente mediano para subtítulos */
+font-weight: semi-bold; /* Semi-negrita para menos prominencia que el título */
+color: #000000; /* Color de texto un poco más claro */
+}
+.t-s-terminal {
+background-color: rgba(85, 83, 83, 0.5); /* Fondo blanco con transparencia */
+color: rgb(245, 245, 245);
+font-family: monospace;
+}
+.t-s-final {
+color: #000000;
+background-color: #7cfc00;
+}
+
+/*TERMINAL*/
+.terminal {
+    background-color: #1d1f21;  /* Color de fondo oscuro */
+    color: #7cfc00;  /* Color de texto verde claro */
+    border: 1px solid #ccc;  /* Borde gris claro */
+    padding: 10px;
+    font-family: 'Courier New', monospace;  /* Tipografía monoespaciada */
+    border-radius: 5px;  /* Bordes redondeados */
+    max-width: 600px;  /* Ancho máximo */
+    margin: 20px;  /* Margen para separar de otros elementos */
+    }
+    
+    .terminal-header {
+    padding: 5px;
+    color: #fff;  /* Texto blanco para el encabezado */
+    font-weight: bold;  /* Texto en negrita */
+    }
+    
+    .terminal-body {
+    overflow-x: auto;  /* Añade desplazamiento horizontal si es necesario */
+    }
+    .terminal-footer {
+    color: darkcyan;
+    }
+    
+    pre {
+    margin: 0;  /* Quita el margen por defecto de <pre> */
+    white-space: pre-wrap;  /* Asegura que el texto se ajuste al contenedor */
+    }
+    
+    /*IMAGENES*/
+    .imagen-container {
+        max-width: max-content;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        border-radius: 8px;
+        overflow: hidden;
+        }
+        .imagen-estilo {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #ccc;
+        }
+        .pie-de-foto {
+        text-align: center; /* Centra el texto del pie de foto */
+        color: #666; /* Color del texto para el pie de foto */
+        padding: 2px 4px; /* Padding para espacio alrededor del texto */
+        font-size: 14px; /* Tamaño adecuado para el pie de foto */
+        background-color:#f8f8f8; /* Un fondo ligeramente diferente para destacarlo */
+        border-top: 1px solid #ccc; /* Define visualmente el área del pie de foto */
+        }
