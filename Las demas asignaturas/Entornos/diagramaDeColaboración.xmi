@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.38.2 (Applications 23.08.2) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="Modelo UML">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="udnoiMqSnudID" name="char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ufzdn7yd0nxRX" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uq7uFhfGAKelW" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMXMc8gnIP7T3" name="double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uauvm8mUEqEnD" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uFqxAglW1JwTw" name="string" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzl8uPfN4BJNL" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uOwwh3L4JKCYc" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uE9E0Ag2evGRX" name="unsigned int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uS7JWljHg3f8b" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uJDojhlzfjXcq" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uPG5OE1M0cpxB" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKJz406gGquYM" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZqoyUQc4VUfV" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ux34I0LUOQBWQ" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uoeORlDnGswOc" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uAaayVMF3WwQB" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKKgWcFizFGTN" name="wchar_t" stereotype="dataType"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uPD3mH4pVTDQZ" name="Gestor Solicitudes">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="umrel77WBhb26" name="10: dieta final revisada"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uQjq2sk1jftYn" name="Módulo Dietas">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usN5qEUvqwT3Z" name="1: Solicitar tratamiento"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uFdIkWFrbnssB" name="3: datos historia clínica"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uCLPOYLZjeIE4" name="9: dieta recomendada"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uqOqkcULv1l1v" name="5: enfermedades a tratar"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u3vIhLmB17Ko2" name="Historia Clínica">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uTAI1l0b7Py4P" name="2: solicitud historia clínica"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u6JqkVZbEfqb6" name="Enfermedad">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ut4zDJBhzgzr2" name="4: solicitud enfermedades"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uvM4GtG5bzdY4" name="Dietas">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJfs1xyM28fKC" name="6: solicitud dieta"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ucnvET3Gic2oV" name="8: fuentes alimentarias"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uhrXEpyUBU6J1" name="Nutrientes">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uyNM4K4XHhqCS" name="7: solicitud fuentes"/>
+      </packagedElement>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="ufZRbmc9Ve6xf" name="diagrama de clases" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Cantarell,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="0">
+            <widgets/>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="u3PA2urtgzIWQ" name="figura7.2" type="4" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Cantarell,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="75" canvasheight="800" canvaswidth="1100" isopen="1" autoincrementsequence="0">
+            <widgets>
+              <objectwidget xmi.id="uhrXEpyUBU6J1" localid="uj9Q3FGhPj4f4" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="716" y="469" width="91" height="28" isinstance="0" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uvM4GtG5bzdY4" localid="uOKuUhqEau36d" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="468" y="396" width="63" height="28" isinstance="0" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="u6JqkVZbEfqb6" localid="u3R22rLM37MlE" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="-161" y="402" width="102" height="28" isinstance="0" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="u3vIhLmB17Ko2" localid="uwiPubXNKLpsn" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="682" y="254" width="120" height="28" isinstance="0" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uQjq2sk1jftYn" localid="utz4Ou6YLZHNA" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="398" y="247" width="117" height="28" isinstance="0" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uPD3mH4pVTDQZ" localid="uena9dodV3tOi" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0,Regular" autoresize="1" x="24" y="121" width="141" height="63" isinstance="0" showstereotype="2" drawasactor="1" multipleinstance="0" decon="0"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="ut4zDJBhzgzr2" localid="uMoGjgXs6hxaf" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="utz4Ou6YLZHNA" widgetbid="u3R22rLM37MlE" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uutBiUZbF9Dqg" localid="uWaZ6Cphoyey1" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="-31.25" y="302" width="189" height="22" isinstance="0" showstereotype="2" text="4: solicitud enfermedades()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="405.332" starty="275"/>
+                  <endpoint endx="-59" endy="402.046"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uyNM4K4XHhqCS" localid="uuuhACA5NpWM5" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="uOKuUhqEau36d" widgetbid="uj9Q3FGhPj4f4" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="ugpyYiJu0u9hE" localid="u77X8ZAGJ8rX4" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="506.5" y="462.55" width="142" height="22" isinstance="0" showstereotype="2" text="7: solicitud fuentes()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="531" starty="418.777"/>
+                  <endpoint endx="716" endy="470.323"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uCLPOYLZjeIE4" localid="uoDt6uNLPvGTF" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="uOKuUhqEau36d" widgetbid="utz4Ou6YLZHNA" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="u09mxrs7PfE4r" localid="uHt0n2cos4Hqt" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="490" y="308.5" width="161" height="22" isinstance="0" showstereotype="2" text="9: dieta recomendada()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="495.46" starty="396"/>
+                  <endpoint endx="460.54" endy="275"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uFdIkWFrbnssB" localid="uUapRhjvaMfak" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="uwiPubXNKLpsn" widgetbid="utz4Ou6YLZHNA" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uMkKvuf2zgIoR" localid="u5Tbfrb3bRhp2" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="558.5" y="217.482" width="168" height="22" isinstance="0" showstereotype="2" text="3: datos historia clínica()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="682" starty="266.529"/>
+                  <endpoint endx="515" endy="262.434"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uJfs1xyM28fKC" localid="uBziO1rhWLXsv" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="utz4Ou6YLZHNA" widgetbid="uOKuUhqEau36d" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uKLTxI4nUKuYl" localid="usAXpve4nRyoU" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="345" y="345.5" width="126" height="22" isinstance="0" showstereotype="2" text="6: solicitud dieta()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="460.54" starty="275"/>
+                  <endpoint endx="495.46" endy="396"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uTAI1l0b7Py4P" localid="u8Xn41m0FjzdL" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="utz4Ou6YLZHNA" widgetbid="uwiPubXNKLpsn" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uYT5bpaItjxXu" localid="ulOOU08hzYKQT" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="575.5" y="286.482" width="187" height="22" isinstance="0" showstereotype="2" text="2: solicitud historia clínica()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="515" starty="262.434"/>
+                  <endpoint endx="682" endy="266.529"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="ucnvET3Gic2oV" localid="uyjDgPYT6yJbP" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="uj9Q3FGhPj4f4" widgetbid="uOKuUhqEau36d" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uF4NcnzKV00tI" localid="utrhvk29gcnh4" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="602.5" y="398.55" width="168" height="22" isinstance="0" showstereotype="2" text="8: fuentes alimentarias()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="716" starty="470.323"/>
+                  <endpoint endx="531" endy="418.777"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="usN5qEUvqwT3Z" localid="uZ98FqjP40HBS" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="uena9dodV3tOi" widgetbid="utz4Ou6YLZHNA" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="u0nPAyiIkJSL8" localid="uF32o6hLTanvl" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="150.64" y="229.885" width="167" height="22" isinstance="0" showstereotype="2" text="1: Solicitar tratamiento()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="165" starty="173.631"/>
+                  <endpoint endx="409.79" endy="247"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="umrel77WBhb26" localid="umZdieRFhpTJg" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="utz4Ou6YLZHNA" widgetbid="uena9dodV3tOi" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uBL8uEfbZOn2C" localid="uxZLfNm6HtXtD" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="257" y="163.175" width="164" height="22" isinstance="0" showstereotype="2" text="10: dieta final revisada()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="409.79" starty="247"/>
+                  <endpoint endx="165" endy="173.631"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uqOqkcULv1l1v" localid="uzlPpxjJGTvjg" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="505" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="u3R22rLM37MlE" widgetbid="utz4Ou6YLZHNA" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uA709SPaKbqhh" localid="uetRKbirSCb0D" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Cantarell,11,-1,5,50,0,0,0,0,0" autoresize="1" x="120.75" y="352" width="180" height="22" isinstance="0" showstereotype="2" text="5: enfermedades a tratar()" pretext="" posttext="" role="706"/>
+                <linepath layout="Direct">
+                  <startpoint startx="-59" starty="402.046"/>
+                  <endpoint endx="405.332" endy="275"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="u3PA2urtgzIWQ" documentation="" uniqueid="uqOqkcULv1l1v"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="ufZRbmc9Ve6xf" type="807" label="diagrama de clases" open="0"/>
+          <listitem id="uvM4GtG5bzdY4" type="813" open="1">
+            <listitem id="uJfs1xyM28fKC" type="815" open="0"/>
+            <listitem id="ucnvET3Gic2oV" type="815" open="0"/>
+          </listitem>
+          <listitem id="u6JqkVZbEfqb6" type="813" open="1">
+            <listitem id="ut4zDJBhzgzr2" type="815" open="0"/>
+          </listitem>
+          <listitem id="u3PA2urtgzIWQ" type="806" label="figura7.2" open="0"/>
+          <listitem id="uPD3mH4pVTDQZ" type="813" open="1">
+            <listitem id="umrel77WBhb26" type="815" open="0"/>
+          </listitem>
+          <listitem id="u3vIhLmB17Ko2" type="813" open="1">
+            <listitem id="uTAI1l0b7Py4P" type="815" open="0"/>
+          </listitem>
+          <listitem id="uQjq2sk1jftYn" type="813" open="1">
+            <listitem id="usN5qEUvqwT3Z" type="815" open="0"/>
+            <listitem id="uFdIkWFrbnssB" type="815" open="0"/>
+            <listitem id="uqOqkcULv1l1v" type="815" open="0"/>
+            <listitem id="uCLPOYLZjeIE4" type="815" open="0"/>
+          </listitem>
+          <listitem id="uhrXEpyUBU6J1" type="813" open="1">
+            <listitem id="uyNM4K4XHhqCS" type="815" open="0"/>
+          </listitem>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="uq7uFhfGAKelW" type="829" open="0"/>
+            <listitem id="ufzdn7yd0nxRX" type="829" open="0"/>
+            <listitem id="uAaayVMF3WwQB" type="829" open="0"/>
+            <listitem id="uZqoyUQc4VUfV" type="829" open="0"/>
+            <listitem id="uOwwh3L4JKCYc" type="829" open="0"/>
+            <listitem id="uS7JWljHg3f8b" type="829" open="0"/>
+            <listitem id="ux34I0LUOQBWQ" type="829" open="0"/>
+            <listitem id="uKJz406gGquYM" type="829" open="0"/>
+            <listitem id="uFqxAglW1JwTw" type="829" open="0"/>
+            <listitem id="uzl8uPfN4BJNL" type="829" open="0"/>
+            <listitem id="uE9E0Ag2evGRX" type="829" open="0"/>
+            <listitem id="uoeORlDnGswOc" type="829" open="0"/>
+            <listitem id="uKKgWcFizFGTN" type="829" open="0"/>
+          </listitem>
+        </listitem>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
