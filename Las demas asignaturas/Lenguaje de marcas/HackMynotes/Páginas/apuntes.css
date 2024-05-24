@@ -1,152 +1,231 @@
-/* Estilo para el menú de navegación */
+/*BODY*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.hmn {
+    color: chartreuse;
+}
+
+/*CONTENEDOR*/
+.Container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/*BOTONES*/
+.botones-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
+
+.boton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.boton:hover::after {
+    opacity: 1;
+}
+
+.boton img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.boton h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Estilo base para todos los textos */
+.texto-style {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+    padding: 10px; /* Espacio interior generoso */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px auto; /* Margen superior e inferior para separación */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+    max-width: 90%; /* Controla el ancho máximo del bloque */
+    margin-left: auto; /* Centra el bloque horizontalmente */
+    margin-right: auto;
+    color: #333; /* Color de texto oscuro para contraste con el fondo */
+    font-family: 'Arial', sans-serif; /* Fuente genérica para alta legibilidad */
+}
+
+/* Estilos especializados para el título principal */
+.t-s-tit {
+    background-color: rgb(23, 31, 39);
+    font-size: 36px; /* Tamaño de fuente grande para títulos principales */
+    font-weight: bold; /* Fuente en negrita */
+    color: #c7c6c6; /* Color de texto un poco más oscuro para destacar */
+}
+
+/* NAVEGADOR*/
 nav {
-    background-color: rgb(0, 0, 0); /* Color de fondo del nav */
-    color: white; /* Color del texto */
-    display: flex; /* Hace que los elementos dentro del nav se distribuyan en una fila */
-    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
-    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-    padding: 10px 20px; /* Añade un relleno de 10px arriba y abajo, y 20px a los lados */
-    border-bottom: 3px solid rgba(51, 204, 51); /* Agrega un borde inferior de 3px sólido con un color */
-    height: 50px; /* Establece la altura del nav */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid rgba(51, 204, 51);
+    height: 50px;
 }
 
-/* Estilos para los enlaces dentro del menú de navegación */
+
 .nav-links {
-    color: white; /* Establece el color del texto */
-    text-decoration: none; /* Quita la decoración de subrayado */
-    margin-left: 20px; /* Añade un margen a la izquierda */
+    display: flex;
+    align-items: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
 }
 
-/* Estilos para los enlaces y el contenido de los apuntes */
-.nav-links a, .contenido-apuntes {
-    color: white; /* Establece el color del texto */
-    text-decoration: none; /* Quita la decoración de subrayado */
-    padding: 10px; /* Añade un relleno de 10px */
-    display: inline-block; /* Hace que los elementos se muestren como bloques en línea */
-}
-
-/* Estilos para el contenido de los apuntes */
-.apuntes {
-    position: relative; /* Establece la posición relativa */
-    display: inline-block; /* Hace que el elemento se muestre como bloque en línea */
-}
-
-/* Estilos para el contenido de los apuntes cuando se muestra */
-.apuntes-contenido {
-    position: absolute; /* Establece la posición absoluta */
-    background-color: #474545; /* Color de fondo */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Agrega una sombra */
-    z-index: 1000; /* Establece la posición z */
-    width: 100%; /* Establece el ancho al 100% */
-    max-height: 0; /* Establece la altura máxima a 0 */
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    transition: max-height 0.5s ease-out; /* Agrega una transición suave */
-    top: 100%; /* Mueve el contenido hacia abajo */
-    left: 0; /* Alinea el contenido a la izquierda */
-}
-
-/* Estilos para mostrar el contenido de los apuntes cuando se hace hover */
-.apuntes:hover .apuntes-contenido {
-    max-height: 500px; /* Establece la altura máxima al mostrar */
-}
-
-/* Estilos para los enlaces dentro del menú de navegación */
 .nav-links a {
-    padding: 5px 10px; /* Añade un relleno */
-    color: white; /* Establece el color del texto */
-    text-decoration: none; /* Quita la decoración de subrayado */
-    margin-right: 24px; /* Añade un margen a la derecha */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 24px;
+    display: inline-block;
 }
 
-/* Estilos para los enlaces y contenido de los apuntes cuando se hace hover */
-.nav-links a:hover, .apuntes-contenido a:hover {
-    background-color: #474545; /* Cambia el color de fondo al hacer hover */
-}
-
-/* Estilos para los enlaces dentro del menú de navegación cuando se hace hover */
 .nav-links a:hover {
-    color: black; /* Cambia el color del texto al hacer hover */
-    background-color: rgb(87, 238, 67, 0.5); /* Cambia el color de fondo al hacer hover */
-    padding: 5px 10px; /* Añade un relleno */
+    background-color: rgb(87, 238, 67, 0.5);
+    color: black;
 }
 
-/* Estilos para el botón de menú desplegable */
+/* Estilo para el menú de apuntes */
+.apuntes {
+    position: relative;
+    display: inline-block;
+}
+
+.apuntes-contenido {
+    position: absolute;
+    background-color: #474545;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    top: 100%;
+    left: 0;
+}
+
+.apuntes:hover .apuntes-contenido {
+    max-height: 500px;
+}
+
+.apuntes-contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.apuntes-contenido a:hover {
+    background-color: #474545;
+}
+
+/* Estilo para el botón de menú desplegable */
 .menu-toggle {
     display: none; /* Oculta el botón en pantallas grandes */
-    background: none; /* Establece el fondo transparente */
-    border: none; /* Quita el borde */
-    cursor: pointer; /* Cambia el cursor a una mano */
-    padding: 10px; /* Añade un relleno */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
-/* Estilos para las barras del botón de menú desplegable */
 .menu-toggle span {
-    display: block; /* Muestra los elementos como bloques */
-    width: 25px; /* Establece el ancho */
-    height: 3px; /* Establece la altura */
-    background-color: white; /* Establece el color de fondo */
-    margin-bottom: 5px; /* Añade un margen en la parte inferior */
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
 }
 
-/* Mostrar el menú desplegable cuando se hace clic en el botón de hamburguesa */
-.menu-open .nav-links {
-    display: flex; /* Muestra los elementos en una columna */
-    flex-direction: column; /* Establece la dirección de los elementos */
-    position: absolute; /* Establece la posición absoluta */
-    top: 50px; /* Establece la posición desde la parte superior */
-    left: 0; /* Establece la posición desde la izquierda */
-    background-color: black; /* Establece el color de fondo */
-    width: 100%; /* Establece el ancho al 100% */
-}
-
-/* Estilos para los enlaces dentro del menú desplegable */
-.menu-open .nav-links a {
-    padding: 10px; /* Añade un relleno */
-    text-align: center; /* Centra el texto */
-    color: white; /* Establece el color del texto */
-    text-decoration: none; /* Quita la decoración de subrayado */
-}
-
-/* Estilos para los dispositivos con un ancho máximo de 768px */
+/* Estilos para dispositivos pequeños */
 @media screen and (max-width: 768px) {
     .botones-container {
-        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en dispositivos más pequeños */
-        gap: 10px; /* Reduce el espacio entre los botones */
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en dispositivos más pequeños */
+        gap: 10px; /* Reducir el espacio entre los botones */
     }
 
     .Container {
-        padding: 10px; /* Reduce el relleno del contenedor principal */
+        padding: 10px; /* Reducir el relleno del contenedor principal */
     }
 
     .boton {
-        padding: 15px; /* Reduce el relleno de los botones */
-        max-width: 100%; /* Ajusta el ancho máximo de los botones */
+        padding: 15px; /* Reducir el relleno de los botones */
+        max-width: 100%; /* Ajustar el ancho máximo de los botones */
     }
 
     .boton h2 {
-        font-size: 18px; /* Reduce el tamaño de la fuente para adaptarse a pantallas más pequeñas */
+        font-size: 18px; /* Reducir el tamaño de la fuente para adaptarse a pantallas más pequeñas */
     }
 
     .menu-toggle {
-        display: block; /* Muestra el botón en pantallas pequeñas */
+        display: block; /* Mostrar el botón en pantallas pequeñas */
     }
 
     .nav-links {
-        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+        display: none; /* Ocultar el menú de navegación en pantallas pequeñas */
+        flex-direction: column; /* Alinear los enlaces en columna */
+        width: 100%;
+        background-color: black; /* Fondo negro para el menú desplegable */
+        position: absolute;
+        top: 50px;
+        left: 0;
     }
-}
 
-/* Estilos para el logotipo */
-.logo img{
-    max-width: 70px; /* Establece el ancho máximo */
-    margin-right: 20px; /* Añade un margen a la derecha */
-    border: 2px solid transparent; /* Establece un borde transparente */
-    transition: border-color 0.3s ease; /* Agrega una transición suave */
-    border-radius: 10px; /* Establece un radio de borde */
-}
+    .nav-links a {
+        margin: 10px 0; /* Espacio entre los enlaces en el menú desplegable */
+        padding: 10px 20px;
+    }
 
-/* Estilos para el logotipo cuando se hace hover */
-.logo img:hover {
-    border-color: #137d00; /* Cambia el color del borde al hacer hover */
-    transform: scale(.95); /* Reduce ligeramente el tamaño al hacer hover */
+    .menu-toggle:checked ~ .nav-links {
+        display: flex; /* Mostrar el menú de navegación cuando se hace clic en el botón */
+    }
 }

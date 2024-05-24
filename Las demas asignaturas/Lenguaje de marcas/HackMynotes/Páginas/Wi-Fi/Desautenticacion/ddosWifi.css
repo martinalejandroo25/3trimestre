@@ -1,17 +1,17 @@
 body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-image: url(/imagenes/difuminado.webp);
-        background-size: cover;
-        padding: 20px;
-    }
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(/imagenes/difuminado.webp);
+    background-size: cover;
+    padding: 20px;
+}
 
-    @media (max-width: 600px) {
-        body {
-            padding: 10px; /* Menor padding en pantallas pequeñas */
-        }
-
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Menor padding en pantallas pequeñas */
     }
+}
+
 .imagen-container {
     max-width: 600px;
     margin: 20px auto;
@@ -20,11 +20,13 @@ body {
     overflow: hidden;
     background: #f4f4f4;
 }
+
 .imagen-estilo {
     width: 100%;
     display: block;
     border-bottom: 1px solid #ccc;
 }
+
 .pie-de-foto {
     text-align: center; /* Centra el texto del pie de foto */
     color: #666; /* Color del texto para el pie de foto */
@@ -33,6 +35,7 @@ body {
     background-color: #f8f8f8; /* Un fondo ligeramente diferente para destacarlo */
     border-top: 1px solid #ccc; /* Define visualmente el área del pie de foto */
 }
+
 /* Estilo base para todos los textos */
 .texto-style {
     background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
@@ -62,12 +65,14 @@ body {
     font-weight: semi-bold; /* Semi-negrita para menos prominencia que el título */
     color: #000000; /* Color de texto un poco más claro */
 }
+
 .t-s-terminal {
     background-color: rgba(85, 83, 83, 0.5); /* Fondo blanco con transparencia */
     color: rgb(245, 245, 245);
     font-family: monospace;
 }
-/* NAV*/
+
+/* NAV */
 nav {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -78,17 +83,29 @@ nav {
     border-bottom: 3px solid rgba(51, 204, 51);
     height: 50px;
 }
+
 .nav-links {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
 }
-.nav-links a, .contenido-apuntes {
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px;
+    margin-right: 24px;
     display: inline-block;
 }
+
+.nav-links a:hover {
+    background-color: rgb(87, 238, 67, 0.5);
+    color: black;
+}
+
+/* Estilo para el menú de apuntes */
 .apuntes {
     position: relative;
     display: inline-block;
@@ -110,6 +127,7 @@ nav {
 .apuntes:hover .apuntes-contenido {
     max-height: 500px;
 }
+
 .apuntes-contenido a {
     color: black;
     padding: 12px 16px;
@@ -117,23 +135,11 @@ nav {
     display: block;
 }
 
-.nav-links a {
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    margin-right: 24px;
-}
-.nav-links a:hover, .apuntes-contenido a:hover {
+.apuntes-contenido a:hover {
     background-color: #474545;
 }
 
-.nav-links a:hover {
-    color: black;
-    background-color: rgb(87, 238, 67, 0.5);
-    padding: 5px 10px;
-}
-
-/*TERMINAL*/
+/* TERMINAL */
 .terminal {
     background-color: #1d1f21;  /* Color de fondo oscuro */
     color: #7cfc00;  /* Color de texto verde claro */
@@ -142,7 +148,7 @@ nav {
     font-family: 'Courier New', monospace;  /* Tipografía monoespaciada */
     border-radius: 5px;  /* Bordes redondeados */
     max-width: 600px;  /* Ancho máximo */
-    margin: 20px;  /* Margen para separar de otros elementos */
+    margin: 20px auto;  /* Margen para separar de otros elementos */
 }
 
 .terminal-header {
@@ -154,6 +160,7 @@ nav {
 .terminal-body {
     overflow-x: auto;  /* Añade desplazamiento horizontal si es necesario */
 }
+
 .terminal-footer {
     color: darkcyan;
 }
