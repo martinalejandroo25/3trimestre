@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- /*barra superior navegación*/ -->
+    <!-- Barra superior navegación -->
     <nav>
         <div class="logo">HackMyNotes</div>
         <div class="nav-links">
@@ -33,22 +33,22 @@
     <h3 class="texto-style">En este apartado veremos algunas formas de hacking Wifi</h3>
     <hr>
     <h2 class="texto-style t-s-sub">Ataques DDOS de desconexión de un dispositivo</h2>
-    <!--VISUALIZAR ADAPTADORES DE RED-->
+    <!-- VISUALIZAR ADAPTADORES DE RED -->
     <div class="terminal">
         <div class="terminal-header">
             <span>Bash</span>
         </div>
         <div class="terminal-body">
-            <pre>$ iw config</pre>
+            <pre>$ iwconfig</pre>
         </div>
         <div class="texto-style t-s-terminal">
-            este comando se usa para visualizar nuestras tarjetas de red disponibles, de esta información nos importa el
+            Este comando se usa para visualizar nuestras tarjetas de red disponibles, de esta información nos importa el
             modo de la tarjeta
-            (buscamos estar en modo monitos)
+            (buscamos estar en modo monitor)
         </div>
     </div>
     <h3 class="texto-style">En el siguiente paso tendremos que tener instalada la herramienta aircrack-ng</h3>
-    <!--INSTALACION DE HERRAMIENTA-->
+    <!-- INSTALACION DE HERRAMIENTA -->
     <div class="terminal">
         <div class="terminal-header">
             <span>Bash</span>
@@ -56,62 +56,47 @@
         <div class="terminal-body">
             <pre>$ sudo apt update</pre>
             <div class="terminal-footer">
-                realizamos una actualización rápida del sistema
+                Realizamos una actualización rápida del sistema
             </div>
         </div>
         <div class="terminal-body">
-            $ sudo apt-install aircrack-ng
+            <pre>$ sudo apt install aircrack-ng</pre>
             <div class="terminal-footer">
-                instalamos aircrack-ng
+                Instalamos aircrack-ng
             </div>
         </div>
     </div>
-    <h3 class="texto-style">Ahora podremos usar la herramienta </h3>
+    <h3 class="texto-style">Ahora podremos usar la herramienta</h3>
     <div class="terminal">
         <div class="terminal-header">
             <span>Bash</span>
         </div>
         <div class="terminal-body">
-            <pre>$ sudo airmon-ng "nombre del adaptador de red"</pre>
+            <pre>$ sudo airmon-ng start [nombre del adaptador de red]</pre>
             <div class="texto-style t-s-terminal">
                 Nos ayudará a poner en modo monitor a nuestro adaptador. <br>
                 El modo monitor se encarga de escuchar todos y cada uno de los paquetes que hay en el “aire” y tiene la
-                posibilidad de capturarlos con diferentes programas
+                posibilidad de capturarlos con diferentes programas.
             </div>
         </div>
         <div class="terminal-footer">
-            Usualmente los adaptadores tienen por nombre wlan0 o wlan1, después de activar el modo monitor pasaría a
-            llamarse wlan0mon o wlan1mon
+            Usualmente los adaptadores tienen por nombre wlan0 o wlan1. Después de activar el modo monitor pasaría a
+            llamarse wlan0mon o wlan1mon.
         </div>
     </div>
-    <h3 class="texto-style">El siguiente paso será escanear en busca de la red víctima </h3>
+    <h3 class="texto-style">El siguiente paso será escanear en busca de la red víctima</h3>
     <div class="terminal">
         <div class="terminal-header">
             <span>Bash</span>
         </div>
         <div class="terminal-body">
-            <pre>$ sudo airodump-ng --band a "nombre del adaptador"</pre>
+            <pre>$ sudo airodump-ng --band a [nombre del adaptador]</pre>
             <div class="terminal-footer">Para realizar el escaneo de redes 5GHz</div>
-            <pre>$ sudo airodump-ng --band b "nombre del adaptador"</pre>
+            <pre>$ sudo airodump-ng --band b [nombre del adaptador]</pre>
             <div class="terminal-footer">Escanea y captura paquetes en la banda de 2.4 GHz, específicamente en los
                 canales utilizados por el estándar 802.11b</div>
-            <pre>$ sudo airodump-ng --band g "nombre del adaptador"</pre>
-            <div class="terminal-footer">Escanea y capturar paquetes en la banda de 2.4 GHz, pero en los canales
-                utilizados por el estándar 802.11g</div>
-        </div>
-    </div>
-    <div class="terminal">
-        <div class="terminal-header">
-            <span>Bash</span>
-        </div>
-        <div class="terminal-body">
-            <pre>$ sudo airodump-ng --band a "nombre del adaptador"</pre>
-            <div class="terminal-footer">Para realizar el escaneo de redes 5GHz</div>
-            <pre>$ sudo airodump-ng --band b "nombre del adaptador"</pre>
-            <div class="terminal-footer">Escanea y captura paquetes en la banda de 2.4 GHz, específicamente en los
-                canales utilizados por el estándar 802.11b</div>
-            <pre>$ sudo airodump-ng --band g "nombre del adaptador"</pre>
-            <div class="terminal-footer">Escanea y capturar paquetes en la banda de 2.4 GHz, pero en los canales
+            <pre>$ sudo airodump-ng --band g [nombre del adaptador]</pre>
+            <div class="terminal-footer">Escanea y captura paquetes en la banda de 2.4 GHz, pero en los canales
                 utilizados por el estándar 802.11g</div>
         </div>
     </div>

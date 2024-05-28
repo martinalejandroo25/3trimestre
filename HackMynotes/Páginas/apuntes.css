@@ -1,0 +1,90 @@
+/*BODY*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.hmn {
+    color: chartreuse;
+}
+/*CONTENEDOR*/
+.Container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.botones-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.boton {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.boton:hover {
+    transform: scale(1.05);
+}
+.boton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.boton:hover::after {
+    opacity: 1;
+}
+.boton img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.boton h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+/* Estilo base para todos los textos */
+.texto-style {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+    padding: 10px; /* Espacio interior generoso */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px auto; /* Margen superior e inferior para separación */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+    max-width: 90%; /* Controla el ancho máximo del bloque */
+    margin-left: auto; /* Centra el bloque horizontalmente */
+    margin-right: auto;
+    color: #333; /* Color de texto oscuro para contraste con el fondo */
+    font-family: 'Arial', sans-serif; /* Fuente genérica para alta legibilidad */
+}
+
+/* Estilos especializados para el título principal */
+.t-s-tit {
+    background-color: rgb(23, 31, 39);
+    font-size: 36px; /* Tamaño de fuente grande para títulos principales */
+    font-weight: bold; /* Fuente en negrita */
+    color: #c7c6c6; /* Color de texto un poco más oscuro para destacar */
+}
