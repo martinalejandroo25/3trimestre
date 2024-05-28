@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ficheros_csv">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Java/ExamenFinal/ficheros_csv.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

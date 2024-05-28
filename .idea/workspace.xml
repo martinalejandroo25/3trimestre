@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c487ed7-b708-4c95-9e41-dac16cd20d82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/3trimestre.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeforeExam/Entities/Reserva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeforeExam/Entities/Restaurante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeforeExam/Entities/RestauranteSalonPrivado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeforeExam/Entities/RestauranteTerraza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BeforeExam/Services/GestionReservas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/App/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/ExamenFinal.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/Prueba escrita 2024.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/Resources/tecnico.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/Resources/tickets.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/Resources/usuarios.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/Services/ServicioSoporte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/ficheros_csv.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/io/TicketsSoporte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/models/Especialidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/models/Estado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/models/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/models/Tecnico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/models/TicketSoporte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenFinal/models/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Compra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Producto2Mano.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/service/PerfilUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/DefaultMethods/EmployeeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/DefaultMethods/EmployeeDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/DefaultMethods/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/PrivateMethods/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/StaticMethods/BasicCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/StaticMethods/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/Interfaces/StaticMethods/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/record/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/record/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/record/EmployeeMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/sealedclass/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/sealedclass/MotorCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/sealedclass/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/sealedclass/bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/stringblocks/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/switchExpresions/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional1/var/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional2/Comparadores/ComparatorMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional2/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional2/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional2/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticasJavaOW/FuncionalAvanzada/Funcional2/map/MapDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjercicioPeliculas/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjercicioPeliculas/Genero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjercicioPeliculas/Pelicula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjerciciosStreams/Ejercicio2/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjerciciosStreams/Ejercicio2/Pedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjerciciosStreams/Ejercicio2/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/EjerciciosStreams/Ejercicio2/TestPedidos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/IntroduccionStreams/Ejercicio1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/IntroduccionStreams/Ejercicio1/Registro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/Practica1/EquipoBasket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/Practica1/JugadorBasket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tema7/Practica1/NBALeague.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.idea/3trimestre.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/EjerciciosStreams/Ejercicio2/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/EjerciciosStreams/Ejercicio2/Pedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/EjerciciosStreams/Ejercicio2/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/EjerciciosStreams/Ejercicio2/TestPedidos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/Tema6 3trimestre Consultas/Relacion5.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/Tema6 3trimestre Consultas/relacion6soluciones.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/Tema6 3trimestre Consultas/relacionVendedores.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/Tema6 3trimestre Consultas/solucionesrelacionVendedores.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/Tema7 usuarios/pruebaUsuarioGRANT_REVOKE.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/examenSQL3trimestre/EXAMEN SQL 30 ABRIL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/examenSQL3trimestre/examen_profesores_MartinGarbiso.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Bases de Datos/examenSQL3trimestre/practica_examen_MartinGarbiso .sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Entornos/Ejercicios Diagramas de Clases.xmi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/Practica evaluable UT6.docx.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/imagenes/movil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/imagenes/xml3A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/movil1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/movil2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/style/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/tablet 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6 correcion/tablet 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/Practica evaluable UT6.docx.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/imagenes/movil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/imagenes/xml3A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/movil1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/movil2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/pc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/style/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/tablet 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6/tablet 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/Practica UT6/Practica UT6_7088868bf3bc87c45263c131a8c7a076.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/Practica1/PaginaGrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/Practica1/PracticaGrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/Practica1/gofre.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/Practica2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/Practica2/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/PracticaArea/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/PracticaGrid/PracticaArea/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/ProyectoWeb/ideaPrimeraPag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/ProyectoWeb/imagenes/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/ProyectoWeb/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Lenguaje de marcas/ProyectoWeb/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/Tema 5 Explotación de Sistemas Microinformáticos/CUESTIONARIO UT5 HARDWARE DE UN SISTEMA HARDWAREodt.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/Tema 5 Explotación de Sistemas Microinformáticos/CUESTIONARIO UT5 HARDWARE DE UN SISTEMA HARDWAREodt.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/Tema 5 Explotación de Sistemas Microinformáticos/PROYECTO UT5.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/Tema 5 Explotación de Sistemas Microinformáticos/Proyecto UT5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/Tema 5 Explotación de Sistemas Microinformáticos/TAREA 4-UT1  MICROPROCESADORES.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/RecuperacionBash/EXAMEN RECUPERACIÓN SCRIPT BASH DAW_3dd7ff278d26046faa4e59beea953ebd.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/RecuperacionBash/ejercicio1.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/RecuperacionBash/ejercicio2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/carpetaPrueba/prueba1.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/ejercicio1.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/ejercicio2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Las demas asignaturas/Sistemas Informáticos/cursobash/ejercicio3.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Compra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Producto2Mano$categoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Producto2Mano$estado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Producto2Mano.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/model/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Ejercicio3/service/PerfilUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Funcional2/Developer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/PracticasJavaOW/FuncionalAvanzada/Funcional2/map/MapDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/EjercicioPeliculas/Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/EjercicioPeliculas/Genero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/EjercicioPeliculas/Pelicula.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/IntroduccionStreams/Ejercicio1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/IntroduccionStreams/Ejercicio1/Registro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/Practica1/EquipoBasket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/Practica1/JugadorBasket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3trimestre/Tema7/Practica1/NBALeague.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/3trimestre/main/Esmayor.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2gruP8YjBBrSlZfG3ILBEcmMr5w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/marti/OneDrive/Documentos/GitHub/Hibernate_javaFX_Martin",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c487ed7-b708-4c95-9e41-dac16cd20d82" name="Changes" comment="" />
+      <created>1716467992549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716467992549</updated>
+      <workItem from="1716467993830" duration="165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
